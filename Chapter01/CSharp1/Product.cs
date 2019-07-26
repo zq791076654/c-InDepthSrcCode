@@ -11,7 +11,7 @@ namespace Chapter01.CSharp1
         {
             get { return name; }
         }
-
+		public int a { get; set; }
 		decimal price;
         public decimal Price
         {

@@ -84,6 +84,7 @@
     <Compile Include="CSharp3\ListJoiningOrderingAndFilteringWithLinq.cs" />
     <Compile Include="CSharp3\ListOrderWithExtensionMethod.cs" />
     <Compile Include="CSharp3\ListQueryWithLambdaExpression.cs" />
+    <Compile Include="CSharp3\ListSortWithDelegate.cs" />
     <Compile Include="CSharp3\ListSortWithLambdaExpression.cs" />
     <Compile Include="CSharp3\Product.cs" />
     <Compile Include="CSharp3\ProductWithNullablePrice.cs" />

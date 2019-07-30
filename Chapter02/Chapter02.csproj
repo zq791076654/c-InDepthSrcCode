@@ -52,6 +52,7 @@
     <Compile Include="AnonymousTypes.cs" />
     <Compile Include="ArrayVariance.cs" />
     <Compile Include="LambdaExpression.cs" />
+    <Compile Include="MySimpleDelegateUse.cs" />
     <Compile Include="NullableDemo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -16,6 +16,7 @@ namespace Chapter02
         public static event PrintDel PrintEvent;
         static void Main()
         {
+            MyEventTest me = new MyEventTest();
             PrintEvent("haha");
 
             //PrintDel p1, p2, p3;
@@ -44,18 +45,25 @@ namespace Chapter02
         }
     }
 
+    class MyEventTest
+    {
+        public MyEventTest()
+        {
+            MyPerson p = new MyPerson("york");
+            MySimpleDelegateUse.PrintEvent += p.MyPersonPrint;
+        }
+        
+    }
+
     class MyPerson
     {
         public MyPerson(string name)
         {
-            MyPerson p = new MyPerson("york");
-            MySimpleDelegateUse.PrintEvent += new PrintDel(p.MyPersonPrint);
             Name = name;
         }
         string Name { get; set; }
         public void MyPersonPrint(string message)
         {
-
             Console.WriteLine("{0}:{1}", Name, message);
         }
 

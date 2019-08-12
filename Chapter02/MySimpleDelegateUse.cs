@@ -13,9 +13,10 @@ namespace Chapter02
     delegate void PrintDel(string printMessage);
     class MySimpleDelegateUse
     {
-        public static event PrintDel PrintEvent;
+        public static PrintDel PrintEvent;
         static void Main()
         {
+
             MyEventTest me = new MyEventTest();
             PrintEvent("haha");
 
